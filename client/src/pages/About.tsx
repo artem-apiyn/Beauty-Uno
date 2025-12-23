@@ -43,35 +43,12 @@ export default function About() {
             </div>
           </div>
           
-          <div className="grid grid-cols-2 gap-4">
-            <div className="mt-12 space-y-4">
-              {/* Unsplash: Minimalist salon detail */}
-              <img 
-                src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=1000&auto=format&fit=crop" 
-                alt="Interior detail" 
-                className="w-full h-64 object-cover rounded-sm"
-              />
-              {/* Unsplash: Beauty tools */}
-              <img 
-                src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=1000&auto=format&fit=crop" 
-                alt="Tools" 
-                className="w-full h-48 object-cover rounded-sm"
-              />
-            </div>
-            <div className="space-y-4">
-              {/* Unsplash: Stylist working */}
-              <img 
-                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1000&auto=format&fit=crop" 
-                alt="Stylist" 
-                className="w-full h-48 object-cover rounded-sm"
-              />
-              {/* Unsplash: Salon atmosphere */}
-              <img 
-                src="https://images.unsplash.com/photo-1630230350325-10255c256794?q=80&w=1000&auto=format&fit=crop" 
-                alt="Atmosphere" 
-                className="w-full h-64 object-cover rounded-sm"
-              />
-            </div>
+          <div>
+            <img 
+              src="/salon-full.jpg" 
+              alt="Salon Uno" 
+              className="w-full h-96 object-cover rounded-sm shadow-lg"
+            />
           </div>
         </div>
       </div>

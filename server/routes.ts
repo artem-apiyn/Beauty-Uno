@@ -27,7 +27,7 @@ async function seedDatabase() {
         description: "Классический, аппаратный, комбинированный маникюр с покрытием.",
         category: "salon",
         price: "от 1200 ₽",
-        imageUrl: "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80"
+        imageUrl: "/manicure-service.jpg"
       },
       {
         name: "Педикюр",

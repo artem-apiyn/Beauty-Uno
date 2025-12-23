@@ -110,16 +110,18 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mt-12 h-64 w-full bg-gray-100 rounded-sm overflow-hidden">
-               {/* 2GIS Map */}
-               <iframe 
-                 src="https://2gis.ru/saratov/firm/70000001048509473/46.075599%2C51.575861" 
-                 width="100%" 
-                 height="100%" 
-                 style={{ border: 0 }} 
-                 loading="lazy"
-                 allowFullScreen
-               ></iframe>
+            <div className="mt-12 h-64 w-full bg-gray-100 rounded-sm overflow-hidden flex items-center justify-center">
+               {/* Apple Maps Link */}
+               <a 
+                 href="https://maps.apple.com/place?place-id=IF3C1079797230D1F&address=%D0%98%D0%BC.+%D0%9C%D0%B5%D0%BD%D1%8F%D0%BA%D0%B8%D0%BD%D0%B0+%D0%AE.%D0%B8.+%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C+4%2C+%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C+%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C+410037&coordinate=51.57607%2C46.075982&name=Uno%2C+%D1%81%D0%B0%D0%BB%D0%BE%D0%BD+%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D1%82%D1%8B&_provider=9902"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="flex flex-col items-center justify-center gap-3 px-6 py-8 text-center hover:bg-gray-200/50 transition-colors w-full h-full"
+               >
+                 <MapPin className="w-8 h-8 text-primary" />
+                 <p className="font-bold text-foreground">Посмотреть на Apple Maps</p>
+                 <p className="text-sm text-muted-foreground">Саратов, ул. имени Ю.И. Менякина, 4</p>
+               </a>
             </div>
           </div>
 

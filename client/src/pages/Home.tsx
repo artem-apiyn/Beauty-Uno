@@ -64,9 +64,9 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              {/* Unsplash: Close up of woman with beautiful hair */}
+              {/* Salon Uno Interior */}
               <img 
-                src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2069&auto=format&fit=crop" 
+                src="/salon-philosophy.jpg" 
                 alt="Philosophy" 
                 className="w-full h-[600px] object-cover rounded-sm shadow-xl"
               />

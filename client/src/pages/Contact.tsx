@@ -111,9 +111,9 @@ export default function Contact() {
             </div>
 
             <div className="mt-12 h-64 w-full bg-gray-100 rounded-sm overflow-hidden">
-               {/* Yandex Map */}
+               {/* Google Map */}
                <iframe 
-                 src="https://yandex.ru/maps/org/uno/216263240693/?ll=46.075764%2C51.575848&z=20" 
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5670860555773!2d46.0755447!3d51.5756574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4114c8f80417f0d5:0x697f933cba8b108d!2z0KHQsNGA0LDRgtC-0LIsINCh0LDRgNCw0YLQvtCy0YHQutCw0Y8g0L7QsdC7LiA0!5e0!3m2!1sru!2sru!4v1735008000000" 
                  width="100%" 
                  height="100%" 
                  style={{ border: 0 }} 

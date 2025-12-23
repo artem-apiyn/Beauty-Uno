@@ -7,7 +7,8 @@ import { Footer } from "@/components/Footer";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Clock } from "lucide-react";
+import { MessageCircle, Send } from "lucide-react";
 import { z } from "zod";
 
 type ContactForm = z.infer<typeof insertInquirySchema>;
@@ -67,7 +68,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h5 className="font-bold mb-1 uppercase tracking-wider text-sm">Адрес</h5>
-                  <p className="text-muted-foreground font-light">ул. Ленина, 45, Москва, Россия</p>
+                  <p className="text-muted-foreground font-light">Саратов, улица имени Ю.И. Менякина, 4</p>
                 </div>
               </div>
 
@@ -77,17 +78,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h5 className="font-bold mb-1 uppercase tracking-wider text-sm">Телефон</h5>
-                  <p className="text-muted-foreground font-light">+7 (999) 123-45-67</p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-secondary flex items-center justify-center rounded-full text-primary shrink-0">
-                  <Mail className="w-5 h-5" />
-                </div>
-                <div>
-                  <h5 className="font-bold mb-1 uppercase tracking-wider text-sm">Email</h5>
-                  <p className="text-muted-foreground font-light">hello@unobeauty.ru</p>
+                  <p className="text-muted-foreground font-light">+7 (845) 290-04-25</p>
                 </div>
               </div>
 
@@ -97,7 +88,24 @@ export default function Contact() {
                 </div>
                 <div>
                   <h5 className="font-bold mb-1 uppercase tracking-wider text-sm">Время работы</h5>
-                  <p className="text-muted-foreground font-light">Пн - Вс: 10:00 - 22:00</p>
+                  <p className="text-muted-foreground font-light">9:00 - 20:00</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="w-12 h-12 bg-secondary flex items-center justify-center rounded-full text-primary shrink-0">
+                  <MessageCircle className="w-5 h-5" />
+                </div>
+                <div>
+                  <h5 className="font-bold mb-3 uppercase tracking-wider text-sm">Мы в мессенджерах</h5>
+                  <div className="flex gap-3">
+                    <a href="https://t.me/unosaratov64" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-primary text-white flex items-center justify-center rounded-full hover:opacity-80 transition-opacity">
+                      <Send className="w-4 h-4" />
+                    </a>
+                    <a href="https://wa.me/79085577588" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-primary text-white flex items-center justify-center rounded-full hover:opacity-80 transition-opacity">
+                      <MessageCircle className="w-4 h-4" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

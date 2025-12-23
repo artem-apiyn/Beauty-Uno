@@ -18,9 +18,9 @@ export default function Home() {
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
         {/* Abstract background elements */}
         <div className="absolute inset-0 z-0">
-          {/* Unsplash: Elegant salon interior with warm lighting */}
+          {/* Salon Uno Interior */}
           <img 
-            src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=2070&auto=format&fit=crop" 
+            src="/salon-interior.jpg" 
             alt="Salon Uno Interior" 
             className="w-full h-full object-cover"
           />

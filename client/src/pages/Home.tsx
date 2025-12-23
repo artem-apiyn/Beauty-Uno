@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background font-sans">
       <Navigation />
-
       {/* Hero Section */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
         {/* Abstract background elements */}
@@ -35,7 +34,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="block text-sm md:text-base uppercase tracking-[0.2em] mb-4 text-primary font-medium">
+            <span className="block text-sm md:text-base uppercase tracking-[0.2em] mb-4 font-medium text-[#38332e]">
               Добро пожаловать в Uno
             </span>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight">
@@ -60,7 +59,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
       {/* Philosophy Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
@@ -118,7 +116,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Featured Services */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
@@ -150,7 +147,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-24 bg-foreground text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
@@ -166,7 +162,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
       <Footer />
     </div>
   );

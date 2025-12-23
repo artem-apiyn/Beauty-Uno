@@ -111,13 +111,14 @@ export default function Contact() {
             </div>
 
             <div className="mt-12 h-64 w-full bg-gray-100 rounded-sm overflow-hidden">
-               {/* Placeholder for map */}
+               {/* Yandex Map */}
                <iframe 
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5670860555773!2d37.61763261590855!3d55.75168018055276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0x401c10d60d3d5f0!2sRed%20Square!5e0!3m2!1sen!2sru!4v1620000000000!5m2!1sen!2sru" 
+                 src="https://yandex.ru/maps/org/uno/216263240693/?ll=46.075764%2C51.575848&z=20" 
                  width="100%" 
                  height="100%" 
                  style={{ border: 0 }} 
                  loading="lazy"
+                 allowFullScreen
                ></iframe>
             </div>
           </div>

@@ -13,7 +13,7 @@ async function seedDatabase() {
         description: "Индивидуальный подбор формы, мытье головы, укладка.",
         category: "hair",
         price: "от 1500 ₽",
-        imageUrl: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80"
+        imageUrl: "/hairstyle-service.jpg"
       },
       {
         name: "Окрашивание волос",

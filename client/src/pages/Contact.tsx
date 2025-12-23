@@ -21,7 +21,7 @@ export default function Contact() {
     resolver: zodResolver(insertInquirySchema),
     defaultValues: {
       name: "",
-      email: "",
+      email: "no-reply@uno.local",
       phone: "",
       message: ""
     }
@@ -138,30 +138,16 @@ export default function Contact() {
                 )}
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Email</label>
-                  <Input 
-                    {...form.register("email")} 
-                    className="bg-secondary/20 border-border focus:border-primary h-12" 
-                    placeholder="example@mail.com"
-                  />
-                  {form.formState.errors.email && (
-                    <p className="text-destructive text-sm">{form.formState.errors.email.message}</p>
-                  )}
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Телефон</label>
-                  <Input 
-                    {...form.register("phone")} 
-                    className="bg-secondary/20 border-border focus:border-primary h-12" 
-                    placeholder="+7 (999) 000-00-00"
-                  />
-                  {form.formState.errors.phone && (
-                    <p className="text-destructive text-sm">{form.formState.errors.phone.message}</p>
-                  )}
-                </div>
+              <div className="space-y-2">
+                <label className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Телефон</label>
+                <Input 
+                  {...form.register("phone")} 
+                  className="bg-secondary/20 border-border focus:border-primary h-12" 
+                  placeholder="+7 (999) 000-00-00"
+                />
+                {form.formState.errors.phone && (
+                  <p className="text-destructive text-sm">{form.formState.errors.phone.message}</p>
+                )}
               </div>
 
               <div className="space-y-2">

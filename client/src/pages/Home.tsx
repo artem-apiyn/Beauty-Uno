@@ -94,7 +94,7 @@ export default function Home() {
                     <Star className="w-6 h-6" />
                   </div>
                   <div>
-                    <h5 className="font-bold mb-1">Премиум качество</h5>
+                    <h5 className="font-bold mb-1 text-[20px]">Премиум качество</h5>
                     <p className="text-sm text-muted-foreground">Только лучшие бренды и материалы</p>
                   </div>
                 </div>

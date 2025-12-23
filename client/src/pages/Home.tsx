@@ -81,9 +81,7 @@ export default function Home() {
               <h2 className="font-display text-4xl md:text-5xl mb-6 text-foreground">
                 Естественная красота <br />в деталях
               </h2>
-              <p className="text-muted-foreground font-light text-lg mb-6 leading-relaxed">
-                В Salon Uno мы верим, что истинная красота начинается с заботы о себе. Наша философия основана на индивидуальном подходе к каждому гостю. Мы не просто оказываем услуги — мы создаем настроение и уверенность в себе.
-              </p>
+              <p className="text-muted-foreground text-lg mb-6 leading-relaxed font-normal">В салоне красоты Uno мы верим, что истинная красота начинается с заботы о себе. Наша философия основана на индивидуальном подходе к каждому гостю. Мы не просто оказываем услуги — мы создаем настроение и уверенность в себе.</p>
               <p className="text-muted-foreground font-light text-lg mb-10 leading-relaxed">
                 Наша команда профессионалов использует только премиальную косметику и передовые методики, чтобы подчеркнуть вашу природную привлекательность.
               </p>

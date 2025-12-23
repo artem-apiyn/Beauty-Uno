@@ -103,7 +103,7 @@ export default function Home() {
                     <Sparkles className="w-6 h-6" />
                   </div>
                   <div>
-                    <h5 className="font-bold mb-1">Опытные мастера</h5>
+                    <h5 className="font-bold mb-1 text-[20px]">Опытные мастера</h5>
                     <p className="text-sm text-muted-foreground">Постоянное повышение квалификации</p>
                   </div>
                 </div>

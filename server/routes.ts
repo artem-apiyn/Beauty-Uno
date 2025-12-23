@@ -20,7 +20,7 @@ async function seedDatabase() {
         description: "Сложные техники окрашивания, тонирование, мелирование.",
         category: "hair",
         price: "от 3000 ₽",
-        imageUrl: "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80"
+        imageUrl: "/coloring-service.jpg"
       },
       {
         name: "Маникюр",

@@ -55,7 +55,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/40">
-          <p>&copy; 2024 Salon Uno. Все права защищены.</p>
+          <p>© 2025 Salon Uno. Все права защищены.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white">Политика конфиденциальности</a>
             <a href="#" className="hover:text-white">Публичная оферта</a>

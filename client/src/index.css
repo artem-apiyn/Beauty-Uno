@@ -8,12 +8,12 @@
   --font-sans: 'Lato', sans-serif;
   --font-display: 'Cormorant Garamond', serif;
 
-  /* Elegant Beige & Gold Palette */
+  /* Elegant Deep Gold & Bronze Palette */
   --background: 40 20% 98%;
   --foreground: 30 10% 20%;
   
-  --primary: 35 40% 65%;       /* Gold/Beige */
-  --primary-foreground: 30 10% 20%;
+  --primary: 35 65% 45%;       /* Deep Gold/Bronze */
+  --primary-foreground: 0 0% 100%;
   
   --secondary: 30 15% 90%;     /* Light Beige */
   --secondary-foreground: 30 10% 20%;
@@ -21,15 +21,15 @@
   --muted: 30 10% 94%;
   --muted-foreground: 30 5% 45%;
   
-  --accent: 35 30% 85%;
-  --accent-foreground: 30 10% 20%;
+  --accent: 35 60% 50%;
+  --accent-foreground: 0 0% 100%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 210 40% 98%;
   
-  --border: 35 20% 88%;
-  --input: 35 20% 88%;
-  --ring: 35 40% 65%;
+  --border: 35 30% 80%;
+  --input: 35 30% 80%;
+  --ring: 35 65% 45%;
   
   --card: 0 0% 100%;
   --card-foreground: 30 10% 20%;
@@ -50,11 +50,11 @@
 }
 
 .gold-gradient {
-  background: linear-gradient(135deg, hsl(35 40% 65%), hsl(40 50% 75%));
+  background: linear-gradient(135deg, hsl(35 65% 45%), hsl(40 60% 55%));
 }
 
 .text-gold-gradient {
-  background: linear-gradient(135deg, hsl(35 50% 55%), hsl(40 60% 65%));
+  background: linear-gradient(135deg, hsl(35 70% 40%), hsl(40 65% 50%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

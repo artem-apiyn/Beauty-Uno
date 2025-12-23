@@ -34,7 +34,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="block text-sm md:text-base uppercase tracking-[0.2em] mb-4 font-medium text-[#38332e]">
+            <span className="block text-sm md:text-base uppercase tracking-[0.2em] mb-4 font-medium text-[#bd7f28]">
               Добро пожаловать в Uno
             </span>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight">

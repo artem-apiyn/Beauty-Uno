@@ -31,13 +31,7 @@ export function ServiceCard({ service, variant = "full" }: ServiceCardProps) {
   return (
     <div className="group flex flex-col h-full bg-white border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
       <div className="relative h-64 overflow-hidden">
-        <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center justify-center">
-          <img 
-            src={service.imageUrl} 
-            alt={service.name} 
-            className="w-1/2 h-1/2 object-contain opacity-0 group-hover:opacity-100 transition-all duration-500 scale-75 group-hover:scale-100"
-          />
-        </div>
+        <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity z-10" />
         <img 
           src={service.imageUrl} 
           alt={service.name} 

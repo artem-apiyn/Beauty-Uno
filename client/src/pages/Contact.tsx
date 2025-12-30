@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useCreateInquiry } from "@/hooks/use-inquiries";
-import { insertInquirySchema } from "@shared/schema";
+import { useCreateInquiry, type InquiryData } from "@/hooks/use-inquiries";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Input } from "@/components/ui/input";
@@ -11,24 +10,31 @@ import { MapPin, Phone, Clock } from "lucide-react";
 import { MessageCircle, Send } from "lucide-react";
 import { z } from "zod";
 
-type ContactForm = z.infer<typeof insertInquirySchema>;
+const contactFormSchema = z.object({
+  name: z.string().min(2, "Имя должно содержать минимум 2 символа"),
+  email: z.string().email("Введите корректный email"),
+  phone: z.string().min(10, "Введите корректный номер телефона"),
+  message: z.string().min(10, "Сообщение должно содержать минимум 10 символов"),
+});
+
+type ContactForm = z.infer<typeof contactFormSchema>;
 
 export default function Contact() {
   const { toast } = useToast();
   const mutation = useCreateInquiry();
   
   const form = useForm<ContactForm>({
-    resolver: zodResolver(insertInquirySchema),
+    resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
-      email: "no-reply@uno.local",
+      email: "",
       phone: "",
       message: ""
     }
   });
 
   const onSubmit = (data: ContactForm) => {
-    mutation.mutate(data, {
+    mutation.mutate(data as InquiryData, {
       onSuccess: () => {
         toast({
           title: "Заявка отправлена",

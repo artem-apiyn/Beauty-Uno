@@ -1,4 +1,4 @@
-import { Service } from "@shared/schema";
+import { type Service } from "@/data/mockServices";
 import { cn } from "@/lib/utils";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";

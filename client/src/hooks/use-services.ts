@@ -1,26 +1,25 @@
 import { useQuery } from "@tanstack/react-query";
-import { api, buildUrl } from "@shared/routes";
+import { mockServices, type Service } from "@/data/mockServices";
 
 export function useServices() {
   return useQuery({
-    queryKey: [api.services.list.path],
-    queryFn: async () => {
-      const res = await fetch(api.services.list.path, { credentials: "include" });
-      if (!res.ok) throw new Error("Failed to fetch services");
-      return api.services.list.responses[200].parse(await res.json());
+    queryKey: ["services"],
+    queryFn: async (): Promise<Service[]> => {
+      // Simulate API delay
+      await new Promise(resolve => setTimeout(resolve, 100));
+      return mockServices;
     },
   });
 }
 
 export function useService(id: number) {
   return useQuery({
-    queryKey: [api.services.get.path, id],
-    queryFn: async () => {
-      const url = buildUrl(api.services.get.path, { id });
-      const res = await fetch(url, { credentials: "include" });
-      if (res.status === 404) return null;
-      if (!res.ok) throw new Error("Failed to fetch service");
-      return api.services.get.responses[200].parse(await res.json());
+    queryKey: ["service", id],
+    queryFn: async (): Promise<Service | null> => {
+      // Simulate API delay
+      await new Promise(resolve => setTimeout(resolve, 100));
+      const service = mockServices.find(s => s.id === id);
+      return service || null;
     },
   });
 }

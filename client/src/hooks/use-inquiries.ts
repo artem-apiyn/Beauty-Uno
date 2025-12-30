@@ -1,27 +1,25 @@
 import { useMutation } from "@tanstack/react-query";
-import { api } from "@shared/routes";
-import { z } from "zod";
 
-type InsertInquiry = z.infer<typeof api.inquiries.create.input>;
+export type InquiryData = {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+};
 
 export function useCreateInquiry() {
   return useMutation({
-    mutationFn: async (data: InsertInquiry) => {
-      const res = await fetch(api.inquiries.create.path, {
-        method: api.inquiries.create.method,
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-        credentials: "include",
-      });
-
-      if (!res.ok) {
-        if (res.status === 400) {
-          const error = api.inquiries.create.responses[400].parse(await res.json());
-          throw new Error(error.message);
-        }
-        throw new Error("Failed to send inquiry");
-      }
-      return api.inquiries.create.responses[201].parse(await res.json());
+    mutationFn: async (data: InquiryData) => {
+      // Simulate API call delay
+      await new Promise(resolve => setTimeout(resolve, 500));
+      // In a real app without backend, you might want to log this or send to a third-party service
+      console.log("Inquiry submitted:", data);
+      // Return mock response
+      return {
+        id: Date.now(),
+        ...data,
+        createdAt: new Date().toISOString(),
+      };
     },
   });
 }
